@@ -23,7 +23,7 @@ function MaterialsListContent({
   const [sortingQuery, __] = useQueryState("sorting");
 
 
-  
+
   if (sortingQuery === "date-asc") {
     materials.sort((b, a) => b.date.localeCompare(a.date));
   } else if (sortingQuery === "alpha-asc") {
@@ -40,10 +40,9 @@ function MaterialsListContent({
     });
   } else if (sortingQuery === "shuffle") {
     materials = materials
-    .map(value => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value)
-
+      .map(value => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }) => value)
   } else {
     materials.sort((a, b) => b.date.localeCompare(a.date));
   }
@@ -62,30 +61,30 @@ function MaterialsListContent({
         >
           <Link href={`/${material.id}`} className="group block mb-2">
             <span className="flex items-start gap-4">
-              { material.image &&
+              {material.image &&
                 <Image src={material.image} width={100} height={100} alt="poop" className="object-contain" />
               }
 
               <span>
 
-              <span className="underline decoration-muted-foreground/50 underline-offset-4 transition-colors group-hover:decoration-foreground block">
-                {material.title}
-              </span>
-
-              <span className="text-xs text-muted-foreground block mb-2">
-                {material.date}
-              </span>
-
-              { material.summary &&
-                <span className="text-sm text-muted-foreground block py-2">
-                  {material.summary}
+                <span className="underline decoration-muted-foreground/50 underline-offset-4 transition-colors group-hover:decoration-foreground block">
+                  {material.title}
                 </span>
-              }
+
+                <span className="text-xs text-muted-foreground block mb-2">
+                  {material.date}
+                </span>
+
+                {material.summary &&
+                  <span className="text-sm text-muted-foreground block py-2">
+                    {material.summary}
+                  </span>
+                }
 
 
-              <span className="text-sm text-muted-foreground block">
-                Skapare: {material.author}
-              </span>
+                <span className="text-sm text-muted-foreground block">
+                  Skapare: {material.author}
+                </span>
               </span>
             </span>
           </Link>

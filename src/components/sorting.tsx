@@ -3,9 +3,12 @@
 import { cn } from "@/lib/utils";
 import { ArrowDownAZ, ArrowDownZA, CalendarArrowDown, CalendarArrowUp, Dices } from "lucide-react";
 import { useQueryState } from "nuqs";
+import { useState } from "react";
 
 export const Sorting = () => {
   const [sorting, setSorting] = useQueryState("sorting");
+  const [_, setShuffleSeed] = useState(0);
+
 
   return (
     <div className="flex gap-2">
@@ -51,7 +54,12 @@ export const Sorting = () => {
       </button>
 
       <button
-        onClick={() => setSorting("shuffle")}
+        onClick={() => {
+            setSorting("shuffle")
+
+            // This is to be able to trigger it even when active
+            setShuffleSeed(prev => prev + 1);
+        }}
         aria-label="Blanda"
         className={cn("transition-colors", {
           "text-muted-foreground": sorting !== "shuffle",
