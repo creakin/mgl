@@ -9,6 +9,7 @@ import remarkGfm from "remark-gfm";
 import { Button } from "@/components/ui/button";
 import { SquareArrowOutUpRight } from "lucide-react";
 import Image from "next/image";
+import { Suspense } from "react";
 
 export async function generateStaticParams() {
   const materials = await getAllMaterials();
@@ -118,7 +119,7 @@ export default async function Page({
   } as const;
 
   return (
-    <>
+    <Suspense fallback={"Laddar..."}>
       <IndexLink />
 
       <article className="col-span-3 [&_p:not(:last-child)]:mb-6 [&_p]:text-pretty">
@@ -128,7 +129,6 @@ export default async function Page({
         <h1 className="mb-1 font-medium">{material.title}</h1>
         <p className="!mb-1 text-sm text-muted-foreground">{material.author}</p>
         <p className="!mb-12 text-sm text-muted-foreground">{material.date}</p>
-
 
         <script
           type="application/ld+json"
@@ -164,6 +164,6 @@ export default async function Page({
         ) : null}
       </article>
       <div />
-    </>
+    </Suspense>
   );
 }
