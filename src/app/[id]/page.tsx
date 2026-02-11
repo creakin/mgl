@@ -51,7 +51,7 @@ export async function generateMetadata({
           url: material.image ?? `https://www.mglabs.se/api/og?title=${encodeURIComponent(
             material.title,
           )}&description=${encodeURIComponent(cleanDescription)}`,
-          width: 1200,
+          width: 630,
           height: 630,
           alt: cleanDescription.slice(0, 100),
         },

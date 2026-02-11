@@ -20,7 +20,7 @@ const metadata: Metadata = {
     images: [
       {
         url: `https://mglabs.se/${Logo.src}`,
-        width: 1200,
+        width: 630,
         height: 630,
         alt: "Materialist Game Labs",
       },
