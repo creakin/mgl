@@ -10,6 +10,11 @@ export type Song = {
   id: string;
   title: string;
   author: string;
+  tags: string[];
+  summary?: string;
+  date: string;
+  link: string;
+  image?: string;
   content: string;
 };
 

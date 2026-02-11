@@ -1,7 +1,7 @@
 import { getAllSongs } from "@/lib/md";
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://www.barnvistexter.se";
+const siteUrl = "https://www.mglabs.se";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const songs = await getAllSongs();

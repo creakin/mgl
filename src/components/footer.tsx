@@ -5,37 +5,38 @@ import { ModeToggle } from "./mode-toggle";
 
 const SOCIAL_LINKS = [
   {
-    href: "https://davidpaulsson.se",
-    label: "Personal website",
-    text: "davidpaulsson.se",
+    href: "https://github.com/creakin/mgl",
+    label: "Built on a ",
+    ariaLabel: "Built on a fork",
+    text: "fork",
   },
   {
-    href: "https://x.com/davidpaulsson",
-    label: "Twitter profile",
-    text: "x.com/davidpaulsson",
-  },
-  {
-    href: "https://bsky.app/profile/davidpaulsson.se",
-    label: "Bluesky profile",
-    text: "bsky.app/profile/davidpaulsson.se",
-  },
+    href: "https://github.com/davidpaulsson/barnvisor",
+    ariaLabel: "from davidpaulsson@GitHub",
+    label: "from ",
+    text: "davidpaulsson@GitHub",
+  }
 ] as const;
 
 interface FooterLinkProps {
   href: string;
   label: string;
+  ariaLabel: string;
   text: string;
 }
 
-const FooterLink = ({ href, label, text }: FooterLinkProps) => (
-  <a
-    href={href}
-    aria-label={label}
-    className="no-underline transition-colors hover:text-foreground"
-    target="_blank"
-  >
-    {text}
-  </a>
+const FooterLink = ({ href, label, ariaLabel, text }: FooterLinkProps) => (
+  <div>
+    { label }
+    <a
+      href={href}
+      aria-label={ariaLabel}
+      className="underline transition-colors hover:text-foreground"
+      target="_blank"
+    >
+      {text}
+    </a>
+  </div>
 );
 
 export const Footer = ({
@@ -53,7 +54,7 @@ export const Footer = ({
       <div className="col-start-2 col-end-5 space-y-4">
         <ModeToggle />
 
-        <nav aria-label="Social links">
+        <nav aria-label="Social links" className="border-t border-muted-foreground/25 py-4">
           <ul>
             {SOCIAL_LINKS.map((link) => (
               <li key={link.href}>
@@ -62,11 +63,6 @@ export const Footer = ({
             ))}
           </ul>
         </nav>
-
-        <Heart
-          className="inline-block h-5 w-5 fill-red-600 stroke-none"
-          aria-hidden="true"
-        />
       </div>
     </footer>
   );

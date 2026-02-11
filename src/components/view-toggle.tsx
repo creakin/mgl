@@ -6,21 +6,13 @@ import { useQueryState } from "nuqs";
 
 export const ViewToggle = () => {
   const [layout, setLayout] = useQueryState("layout", {
-    defaultValue: "grid",
+    defaultValue: "rows",
     parse: (value): "grid" | "rows" => (value === "rows" ? "rows" : "grid"),
   });
 
   return (
     <div className="flex gap-2">
-      <button
-        onClick={() => setLayout("grid")}
-        aria-label="Visa i rutnät"
-        className={cn("transition-colors", {
-          "text-muted-foreground": layout === "rows",
-        })}
-      >
-        <LayoutGrid className="h-5 w-5" />
-      </button>
+      <span>Vy: </span>
       <button
         onClick={() => setLayout("rows")}
         aria-label="Visa i lista"
@@ -29,6 +21,16 @@ export const ViewToggle = () => {
         })}
       >
         <Rows3 className="h-5 w-5" />
+      </button>
+
+      <button
+        onClick={() => setLayout("grid")}
+        aria-label="Visa i rutnät"
+        className={cn("transition-colors", {
+          "text-muted-foreground": layout === "rows",
+        })}
+      >
+        <LayoutGrid className="h-5 w-5" />
       </button>
     </div>
   );
