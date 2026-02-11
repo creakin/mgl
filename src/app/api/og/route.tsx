@@ -19,7 +19,7 @@ export async function GET(request: Request) {
       ? searchParams.get("title")!.length > 50
         ? searchParams.get("title")!.slice(0, 50) + "…"
         : searchParams.get("title")
-      : "Barnvisor";
+      : "Materialist Game Labs";
 
     const descriptionRaw = stripHtml(searchParams.get("description"));
     const description =

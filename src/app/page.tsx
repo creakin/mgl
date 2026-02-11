@@ -1,29 +1,28 @@
-import { getAllSongs } from "@/lib/md";
+import { getAllMaterials } from "@/lib/md";
 import type { Metadata } from "next";
 import Image from "next/image";
 
 import { ViewToggle } from "@/components/view-toggle";
-import { SongsList } from "@/components/songs-list";
+import { MaterialsList } from "@/components/materials-list";
 import TagList from "@/components/tag-list";
 
 import Logo from "@/assets/logo.jpg"
 import { Sorting } from "@/components/sorting";
-import { useQueryState } from "nuqs";
 
 export const dynamic = "force-static";
 export const revalidate = false;
 
 const metadata: Metadata = {
-  title: "mglabs.se - texter till svenska barnvisor och vaggvisor",
+  title: "mglabs.se - Materialist Game Labs",
   description:
-    "Här hittar du texter till klassiska och nya svenska barnvisor och vaggvisor. Perfekt för föräldrar, pedagoger och barn i alla åldrar.",
+    "Här hittar du material skapat av Materialist Game Labs.",
   openGraph: {
     images: [
       {
-        url: "https://www.mglabs.se/api/og?title=Barnvisor&description=Sångtexter till svenska barnvisor och vaggvisor",
+        url: `https://mglabs.se/${Logo.src}`,
         width: 1200,
         height: 630,
-        alt: "Sångtexter till svenska barnvisor och vaggvisor",
+        alt: "Materialist Game Labs",
       },
     ],
   },
@@ -32,18 +31,8 @@ const metadata: Metadata = {
 export { metadata };
 
 export default async function Home() {
-  const songs = await getAllSongs();
-
-  // songs.sort((a, b) => {
-  //   return new Date(a.date) - new Date(b.date);
-  // });
-
-  // songs.sort((a, b) => {
-  //   if (a.title < b.title) return -1;
-  //   if (a.title > b.title) return 1;
-  //   return 0;
-  // });
-  const tags = [... new Set(songs.flatMap(s => s.tags))];
+  const materials = await getAllMaterials();
+  const tags = [... new Set(materials.flatMap(s => s.tags))];
 
   return (
     <>
@@ -53,8 +42,8 @@ export default async function Home() {
           Materialist Game Labs arkiv
         </h1>
         <p className="mb-12 text-muted-foreground">
-          Välkommen till mglabs.se! Här finns texter till alla dina
-          favoritbarnvisor och vaggvisor, från klassiker till moderna sånger.
+          Välkommen till mglabs.se! Här finner du material skapat av medlemar i skaparkollektivet
+          Materialist Game Labs.
         </p>
 
         <div className="border-b border-muted-foreground/50 pb-4 mb-4">
@@ -67,7 +56,7 @@ export default async function Home() {
           <Sorting />
         </div>
 
-        <SongsList songs={songs} />
+        <MaterialsList materials={materials} />
       </div>
       <div />
     </>

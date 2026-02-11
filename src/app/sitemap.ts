@@ -1,10 +1,10 @@
-import { getAllSongs } from "@/lib/md";
+import { getAllMaterials } from "@/lib/md";
 import type { MetadataRoute } from "next";
 
 const siteUrl = "https://www.mglabs.se";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const songs = await getAllSongs();
+  const materials = await getAllMaterials();
 
   return [
     {
@@ -12,8 +12,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    ...songs.map((song) => ({
-      url: `${siteUrl}/${song.id}`,
+    ...materials.map((material) => ({
+      url: `${siteUrl}/${material.id}`,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

@@ -4,9 +4,9 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
-const songsDirectory = path.join(process.cwd(), "content/songs");
+const materialsDirectory = path.join(process.cwd(), "content/materials");
 
-export type Song = {
+export type Material = {
   id: string;
   title: string;
   author: string;
@@ -18,13 +18,13 @@ export type Song = {
   content: string;
 };
 
-export async function getAllSongs() {
-  const fileNames = await fs.promises.readdir(songsDirectory);
+export async function getAllMaterials() {
+  const fileNames = await fs.promises.readdir(materialsDirectory);
 
   return Promise.all(
     fileNames.map(async (fileName) => {
       const id = fileName.replace(/\.md$/, "");
-      const fullPath = path.join(songsDirectory, fileName);
+      const fullPath = path.join(materialsDirectory, fileName);
       const fileContents = await fs.promises.readFile(fullPath, "utf8");
       const { data, content } = matter(fileContents);
 
@@ -32,13 +32,13 @@ export async function getAllSongs() {
         id,
         content,
         ...data,
-      } as Song;
+      } as Material;
     }),
   );
 }
 
-export async function getSongData(id: string) {
-  const fullPath = path.join(songsDirectory, `${id}.md`);
+export async function getMaterialData(id: string) {
+  const fullPath = path.join(materialsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const matterResult = matter(fileContents);
 
@@ -51,5 +51,5 @@ export async function getSongData(id: string) {
     id,
     ...matterResult.data,
     content: contentHtml,
-  } as Song;
+  } as Material;
 }
