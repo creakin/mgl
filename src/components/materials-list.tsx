@@ -50,19 +50,24 @@ function MaterialsListContent({
   return (
     <ul
       className={cn("gap-4", {
-        "grid grid-cols-2": layout === "grid",
+        "grid grid-cols-2 gap-6": layout === "grid",
         "divide-y": layout === "rows",
       })}
     >
       {materials.filter(s => queryTags === null || s.tags?.some(tag => queryTags?.includes(tag))).map((material) => (
         <li
           key={material.id}
-          className={cn({ "py-4 first:pt-0": layout === "rows" })}
+          className={cn({ 
+            "py-4 first:pt-0": layout === "rows",
+            "border rounded-md border-muted-foreground/25 p-4": layout === "grid"
+          })}
         >
           <Link href={`/${material.id}`} className="group block mb-2">
-            <span className="flex items-start gap-4">
+            <span className={cn("flex items-start gap-4", {
+              "flex-col gap-2": layout === "grid"
+            })}>
               {material.image &&
-                <Image src={material.image} width={100} height={100} alt="poop" className="object-contain" />
+                <Image src={material.image} width={150} height={150} alt={`Bild för ${material.title}`} className="object-contain my-1" />
               }
 
               <span>

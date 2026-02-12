@@ -139,7 +139,7 @@ export default async function Page({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
         />
         <div
-          className="text-muted-foreground mb-8"
+          className="text-muted-foreground mb-8 prose dark:prose-invert"
           dangerouslySetInnerHTML={{
             __html:
               <Markdown remarkPlugins={[remarkGfm]}>{material.content}</Markdown>
