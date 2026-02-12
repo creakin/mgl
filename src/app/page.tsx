@@ -42,7 +42,7 @@ export default async function Home() {
           Materialist Game Labs arkiv
         </h1>
         <p className="mb-12 text-muted-foreground">
-          Välkommen till mglabs.se! Här finner du material skapat av medlemar i skaparkollektivet
+          Välkommen till mglabs.se! Här finner du material skapat av medlemmar i skaparkollektivet
           Materialist Game Labs.
         </p>
 
