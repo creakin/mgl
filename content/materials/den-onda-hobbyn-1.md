@@ -1,6 +1,6 @@
 ---
 title: "Den Onda Hobbyn, volym 1"
-summary: "Jag ringer GWs drömkund, James, och snackar warhammer. 5th Ed fantasy, GWs radikala historia och reaktionära nutid."
+summary: "Vårt första zine som såg dagens ljus på Gothcon 2026"
 date: "2026-04-03"
 author: "Den Onda Hobbyn"
 link: "https://drive.google.com/file/d/1m60Jco8krd4cJMgYZSa1CyR3sXtNSLq-/view"
