@@ -7,7 +7,7 @@ import TagList from "@/components/tag-list";
 import Markdown from 'react-markdown'
 import remarkGfm from "remark-gfm";
 import { Button } from "@/components/ui/button";
-import { SquareArrowOutUpRight } from "lucide-react";
+import { SquareArrowOutUpRight, HardDriveDownload } from "lucide-react";
 import Image from "next/image";
 import { Suspense } from "react";
 
@@ -149,8 +149,17 @@ export default async function Page({
 
         <Link href={material.link} target="_blank">
           <Button size="lg" className="mb-8" variant="outline" >
-            { material.link.includes("https://mglabs.se") ? "Ladda ner material" : "Gå till material" }
-            <SquareArrowOutUpRight />
+            { material.link.includes("https://mglabs.se") ? (
+              <>
+                Ladda ner material
+                <HardDriveDownload />
+              </>
+             ) : (
+              <>
+                Gå till material
+                <SquareArrowOutUpRight />
+              </>
+             ) }
           </Button>
         </Link>
 
