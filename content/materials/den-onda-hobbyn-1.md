@@ -3,7 +3,7 @@ title: "Den Onda Hobbyn, volym 1"
 summary: "Vårt första zine som såg dagens mörker på Gothcon 2026"
 date: "2026-04-03"
 author: "Den Onda Hobbyn"
-link: "https://drive.google.com/file/d/1m60Jco8krd4cJMgYZSa1CyR3sXtNSLq-/view"
+link: "https://mglabs.se/media/MGL_DenOndaHobbyn_Volym1.pdf"
 image: "https://mglabs.se/media/denondahobbyn1.jpg"
 tags: ["zine", "den onda hobbyn"]
 ---

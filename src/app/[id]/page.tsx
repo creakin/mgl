@@ -149,9 +149,8 @@ export default async function Page({
 
         <Link href={material.link} target="_blank">
           <Button size="lg" className="mb-8" variant="outline" >
-            Gå till material
+            { material.link.includes("https://mglabs.se") ? "Ladda ner material" : "Gå till material" }
             <SquareArrowOutUpRight />
-
           </Button>
         </Link>
 
