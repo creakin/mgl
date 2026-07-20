@@ -12,8 +12,8 @@ Thom pratar med Anton, som skapat figurspelet Muterad Medeltid.
 
 _ \ | / _
 
-Följ Thom på bsky: bsky.app/profile/lagomhygge.bsky.social
-Följ MGL på bsky: bsky.app/profile/materialist-games.bsky.social
+Följ Thom på bsky: bsky.app/profile/lagomhygge.bsky.social  
+Följ MGL på bsky: bsky.app/profile/materialist-games.bsky.social  
 Gå med i vår discord: discord.gg/VNFmncR6KT
 
 Musik: "Folkparken" av Jon Mårtensson Elmrud - Jon-martensson – Folkparken

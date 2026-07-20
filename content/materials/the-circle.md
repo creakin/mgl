@@ -5,7 +5,7 @@ date: "2026-01-25"
 author: "Jocher Games - Symbolic Systems"
 link: "https://jochergames.itch.io/the-circle-dreams-of-roots"
 image: "https://img.itch.zone/aW1nLzI1MTgzMDk1LnBuZw==/original/sXnFXE.png"
-tags: ["spel", "kortspel"]
+tags: ["spel", "kortspel", "in english"]
 ---
 
 ## Roots, seeds, ideas.
