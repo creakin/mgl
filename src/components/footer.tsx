@@ -5,16 +5,22 @@ import { ModeToggle } from "./mode-toggle";
 
 const SOCIAL_LINKS = [
   {
-    href: "https://github.com/creakin/mgl",
-    label: "Built on a ",
-    ariaLabel: "Built on a fork",
-    text: "fork",
+    href: "http://discord.gg/VNFmncR6KT",
+    label: "",
+    ariaLabel: "Discord",
+    text: "Discord",
   },
   {
-    href: "https://github.com/davidpaulsson/barnvisor",
-    ariaLabel: "from davidpaulsson@GitHub",
-    label: "from ",
-    text: "davidpaulsson@GitHub",
+    href: "http://bsky.app/profile/materialist-games.bsky.social",
+    ariaLabel: "BlueSky",
+    label: "",
+    text: "BlueSky",
+  },
+  {
+    href: "https://soundcloud.com/materialistgamelabs",
+    ariaLabel: "SoundCloud",
+    label: "",
+    text: "SoundCloud",
   }
 ] as const;
 
@@ -55,10 +61,12 @@ export const Footer = ({
         <ModeToggle />
 
         <nav aria-label="Social links" className="border-t border-muted-foreground/25 py-4">
-          <ul>
-            {SOCIAL_LINKS.map((link) => (
-              <li key={link.href}>
+          <ul className="flex gap-2">
+            {SOCIAL_LINKS.map((link, i) => (
+              <li key={link.href} className="flex gap-2 items-center">
                 <FooterLink {...link} />
+
+                { i < SOCIAL_LINKS.length - 1 && <span className="text-lg">★</span> }
               </li>
             ))}
           </ul>
