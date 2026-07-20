@@ -12,7 +12,7 @@ Thom talks to Max Haiven. Recorded at the Organize! Movement Meetup 2026: [www.o
 
 There's a bit of namedropping and referencing in this one, so here's some links.
 
-— MAX HAIVEN —<br />
+— MAX HAIVEN —
 The Player and the Played: [maxhaiven.com/player/](https://maxhaiven.com/player/)
 The ReImagining Value Action Lab: [reimaginingvalue.ca/](https://reimaginingvalue.ca/)
 Max's website: [maxhaiven.com/](https://maxhaiven.com/)
