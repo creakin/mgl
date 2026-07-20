@@ -1,5 +1,5 @@
 ---
-title: "Spel eller Barbari! 8 - Om det olämpliga 
+title: "Spel eller Barbari! 8 - Om det olämpliga"
 summary: "Vi avhandlar den stora frågan om vad som är svårt, olämpligt eller omöjligt att rollspela om."
 date: "2026-06-28"
 author: "Spel eller barbari!"
