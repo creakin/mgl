@@ -1,6 +1,6 @@
 ---
 title: "Märklighetstroget - episode 26: The Antifascist Game"
-summary: "Thom pratar med Johan Eriksson (Jocher Games) om spelskapande, kollektivt drömmande och om hans spel Oceania 2084 samt The Circle: Dreams of Roots."
+summary: "Thom talks to Max Haiven. Recorded at the Organize! Movement Meetup 2026"
 date: "2026-07-12"
 author: "Märklighetstroget"
 link: "https://soundcloud.com/materialistgamelabs/maerklighetstroget-episode-26"
