@@ -13,9 +13,9 @@ Efter att ha bett om ursäkt för ett övertramp i slutet av förra avsnittet pr
 
 Dessutom: en inbjudan till Materialist Game Con 9-11 oktober i Malmö!
 
-Tack Jon Mårtensson för intro/outro. Mer av hans alster finnes här:
+Tack Jon Mårtensson för intro/outro. Mer av hans alster finnes här:  
 @[jon-martensson](https://soundcloud.com/jon-martensson)
 
-Kontakt: materialistgamelabs@proton.me
+Kontakt: materialistgamelabs@proton.me  
 Häng med oss på Discord: [discord.gg/VNFmncR6KT](http://discord.gg/VNFmncR6KT)
 
