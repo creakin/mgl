@@ -10,19 +10,19 @@ tags: ["podcast", "märklighetstroget"]
 
 Dags för ett besök i Kjell Håfténs verkstad! Här pratas det DIY såväl som DIT (Do It Together). Vad saknar vi i spelkulturen? Vad sysslar Kjell med just nu? Vad är en alternativ kontroll?
 
-- - - KJELL - - -  
+**KJELL**  
 Följ Kjell på bsky: [bsky.app/profile/kjellhaften.bsky.social](https://bsky.app/profile/kjellhaften.bsky.social)  
 Läs om Kjell och anlita honom: [spelverkstad.com](https://spelverkstad.com/)  
 Besök Kompani 415 i Göteborg: [kompani415.se/](https://kompani415.se/)  
 Spela Parade: [kjellhaften.itch.io/parade](https://kjellhaften.itch.io/parade)  
 Spela skitfula spel: [kjellhaften.itch.io/](https://kjellhaften.itch.io/)
 
-- - - THOM/MGL - - -  
+**THOM/MGL**  
 Följ Thom på bsky: [bsky.app/profile/lagomhygge.bsky.social](http://bsky.app/profile/lagomhygge.bsky.social)  
 Följ MGL på bsky: [bsky.app/profile/materialist-games.bsky.social](http://bsky.app/profile/materialist-games.bsky.social)  
 Gå med i vår discord: [discord.gg/VNFmncR6KT](http://discord.gg/VNFmncR6KT)
 
-- - - ANDRA LÄNKAR - - -  
+**ANDRA LÄNKAR**  
 AMAZE - [2026.amaze-berlin.de/](https://2026.amaze-berlin.de/)  
 Punch the Custard - [vbuckenham.com/punchthecustard](https://vbuckenham.com/punchthecustard)  
 V Buckenham - [vbuckenham.com/](https://vbuckenham.com/)  
