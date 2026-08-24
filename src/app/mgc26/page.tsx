@@ -12,8 +12,8 @@ const metadata: Metadata = {
     images: [
       {
         url: `https://mglabs.se/${Mgc26Logo.src}`,
-        width: 630,
-        height: 630,
+        width: 1200,
+        height: 1353,
         alt: "Materialist Game Con 2026",
       },
     ],
