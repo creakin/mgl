@@ -10,12 +10,12 @@ tags: ["podcast", "märklighetstroget"]
 
 Thom pratar med Emma Bexell och med Olof Palme 2.0, bägge representanter för AI-partiet.
 
-Ring Polof Amel: ringolofpal.me/  
-Emmas webbsida: emmabexell.com/  
-www.youtube.com/watch?v=FQ0bMVrz3Po
+Ring Polof Amel: [ringolofpal.me/](https://ringolofpal.me/)  
+Emmas webbsida: [emmabexell.com/](https://emmabexell.com/)  
+[www.youtube.com/watch?v=FQ0bMVrz3Po](https://www.youtube.com/watch?v=FQ0bMVrz3Po)
 
-Följ Thom på bsky: bsky.app/profile/lagomhygge.bsky.social  
-Följ MGL på bsky: bsky.app/profile/materialist-games.bsky.social  
-Gå med i vår discord: discord.gg/VNFmncR6KT
+Följ Thom på bsky: [bsky.app/profile/lagomhygge.bsky.social](http://bsky.app/profile/lagomhygge.bsky.social)  
+Följ MGL på bsky: [bsky.app/profile/materialist-games.bsky.social](http://bsky.app/profile/materialist-games.bsky.social)  
+Gå med i vår discord: [discord.gg/VNFmncR6KT](http://discord.gg/VNFmncR6KT)
 
 Musik: Arbetets söner
