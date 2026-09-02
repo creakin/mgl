@@ -1,6 +1,6 @@
 ---
 title: "Spel eller barbari! 10 - Spelar längden roll?"
-summary: "Den stora frågan: Actual Play, eller Actual Actual Play."
+summary: "Friendslop, kampanjlängd, återkommande NPCs och spelet Killer/Deathgame avhandlas"
 date: "2026-08-30"
 author: "Spel eller barbari!"
 link: "https://soundcloud.com/materialistgamelabs/spel-eller-barbari-10-spelar"
