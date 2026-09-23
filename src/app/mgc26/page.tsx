@@ -85,7 +85,7 @@ export default async function Page() {
           <h2 className="col-span-6 my-8 text-center text-2xl font-bold uppercase underline">
             Lördag
           </h2>
-          <div className="col-span-3">
+          <div className="col-span-3 mb-8 md:mb-0">
             <div className="relative">
               <Image
                 src={Johanna.src}
@@ -120,7 +120,7 @@ export default async function Page() {
             </div>
           </div>
 
-          <div className="col-span-3">
+          <div className="col-span-3 mb-8 md:mb-0">
             <div className="relative">
               <Image
                 src={Oceania.src}
@@ -174,7 +174,7 @@ export default async function Page() {
             </div>
           </div>
 
-          <div className="col-span-3">
+          <div className="col-span-3 mb-8 md:mb-0">
             <div className="relative">
               <Image
                 src={Deserters.src}
