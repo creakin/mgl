@@ -94,7 +94,7 @@ export default async function Page() {
                 alt="Johanna Koljonen"
                 className="aspect-square flex-grow-0 object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <div className="sm:absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
                 <h5 className="text-md italic">Lördag 10 oktober, 12:00</h5>
                 <h3 className="text-xl font-bold uppercase">
                   Spelkonvent som motstånd och demokratisk infrastruktur
@@ -129,7 +129,7 @@ export default async function Page() {
                 alt="Oceania 2084"
                 className="aspect-square flex-grow-0 object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <div className="sm:absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
                 <h5 className="text-md italic">
                   Lördag 10 oktober, föredrag 13:00 & spel ca. 14:00
                 </h5>
@@ -183,7 +183,7 @@ export default async function Page() {
                 alt="Deserters"
                 className="aspect-square flex-grow-0 object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <div className="sm:absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
                 <h5 className="text-md italic">
                   Lördag 10 oktober, 14:00 - 18:00
                 </h5>
