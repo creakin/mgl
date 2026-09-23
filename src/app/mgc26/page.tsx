@@ -5,6 +5,8 @@ import { Suspense } from "react";
 import Mgc26Logo from "@/assets/mgc26.jpg";
 import Johanna from "@/assets/johanna.jpg";
 import Oceania from "@/assets/oceania.jpg";
+import Deserters from "@/assets/deserters.jpg";
+import Link from "next/link";
 
 const metadata: Metadata = {
   title: "Materialist Game Con 2026 - Spel, politik, gemenskap",
@@ -75,10 +77,14 @@ export default async function Page() {
 
         <hr className="col-span-5" />
 
-        <div className="italic text-center col-span-5 my-4">Programmet fylls på löpande...</div>
-    
-        <div className="col-span-5 md:grid grid-cols-6 gap-8">
-          <h2 className="col-span-6 text-2xl font-bold underline text-center uppercase my-8">Lördag</h2>
+        <div className="col-span-5 my-4 text-center italic">
+          Programmet fylls på löpande...
+        </div>
+
+        <div className="col-span-5 grid-cols-6 gap-8 md:grid">
+          <h2 className="col-span-6 my-8 text-center text-2xl font-bold uppercase underline">
+            Lördag
+          </h2>
           <div className="col-span-3">
             <div className="relative">
               <Image
@@ -89,9 +95,7 @@ export default async function Page() {
                 className="aspect-square flex-grow-0 object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-                <h5 className="text-md italic">
-                  Lördag 10 oktober, 12:00
-                </h5>
+                <h5 className="text-md italic">Lördag 10 oktober, 12:00</h5>
                 <h3 className="text-xl font-bold uppercase">
                   Spelkonvent som motstånd och demokratisk infrastruktur
                 </h3>
@@ -110,11 +114,12 @@ export default async function Page() {
                   reder hon ut rollspelens totalt felaktiga historia, diskuterar
                   nordisk spelkultur som uttryck för nordiska demokratiformer
                   och samhällsstrukturer, och drar en lans för spelkonventens
-                  och konventsforskningens politiska betydelse.{" "}
+                  och konventsforskningens politiska betydelse.
                 </p>
               </div>
             </div>
           </div>
+
           <div className="col-span-3">
             <div className="relative">
               <Image
@@ -168,8 +173,54 @@ export default async function Page() {
               </div>
             </div>
           </div>
+
+          <div className="col-span-3">
+            <div className="relative">
+              <Image
+                src={Deserters.src}
+                width={600}
+                height={600}
+                alt="Deserters"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+                <h5 className="text-md italic">
+                  Lördag 10 oktober, 14:00 - 18:00
+                </h5>
+                <h3 className="text-xl font-bold uppercase">
+                  Deserters: An outdoor roleplaying game
+                </h3>
+                <h4 className="text-lg">(OBS! Spelas utomhus)</h4>
+              </div>
+            </div>
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p className="">
+                  Desertörer är ett kortleksbaserat rollspel som spelas utomhus.
+                  Det följder de 50 000 man som deserterade under Napoleons
+                  fälttåg i Ryssland och deras svåra resa hem. Ett rollspel som
+                  är lika simpelt, strategiskt och oförlåtligt som att ta sig
+                  hem från ett krig.
+                </p>
+                <p>
+                  Kolla in spelet och följ skaparen på:{" "}
+                  <Link
+                    href="https://swedishgm.itch.io/deserters"
+                    target="_blank"
+                    className="text-foreground"
+                  >
+                    swedishgm.itch.io/deserters
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div className="italic text-center col-span-5 my-4">Programmet fylls på löpande...</div>
+
+        <div className="col-span-5 my-4 text-center italic">
+          Programmet fylls på löpande...
+        </div>
       </article>
     </Suspense>
   );
