@@ -17,6 +17,12 @@ const SOCIAL_LINKS = [
     text: "BlueSky",
   },
   {
+    href: "https://www.instagram.com/materialist_game_labs",
+    ariaLabel: "Instagram",
+    label: "",
+    text: "Instagram"
+  },
+  {
     href: "https://soundcloud.com/materialistgamelabs",
     ariaLabel: "SoundCloud",
     label: "",
