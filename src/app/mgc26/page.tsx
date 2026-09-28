@@ -6,6 +6,8 @@ import Mgc26Logo from "@/assets/mgc26.jpg";
 import Johanna from "@/assets/johanna.jpg";
 import Oceania from "@/assets/oceania.jpg";
 import Deserters from "@/assets/deserters.jpg";
+import Muterad from "@/assets/muterad.jpg";
+import F28 from "@/assets/f28.jpg";
 import Link from "next/link";
 
 const metadata: Metadata = {
@@ -81,10 +83,76 @@ export default async function Page() {
           Programmet fylls på löpande...
         </div>
 
+
+
         <div className="col-span-5 grid-cols-6 gap-8 md:grid">
           <h2 className="col-span-6 my-8 text-center text-2xl font-bold uppercase underline">
             Lördag
           </h2>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="relative">
+              <Image
+                src={Muterad.src}
+                width={600}
+                height={600}
+                alt="Muterad Medeltid"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="sm:absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+                <h5 className="text-md italic">Drop-in, lördag 10 oktober, 10:00 - 18:00</h5>
+                <h3 className="text-xl font-bold uppercase">
+                  Muterad Medeltid
+                </h3>
+                {/* <h4 className="text-lg">Johanna Koljonen</h4> */}
+              </div>
+            </div>
+
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p className="font-bold">
+                  Europa är en gammal kvinna, ett sprucket kärl, en klanglös malm. Hennes hav är förgiftade, hennes skogar nerbrända, hennes städer raserade i grus.
+                </p>
+                <p>
+                  Men i ruinerna dröjer sig livet kvar. Muterade riddare bekämpar varandra med bredsvärd och handgranater, de slåss på den Uråldrige Kardinalens befallning, de slåss i Teloputinas namn.
+                </p>
+                <p>
+                  När bensinen är slut får Storhästar draga pansarvagnarna genom leran, när den Färska Ammunitionen ruttnar fortsätter kretiner och pestpilgrimer att slåss med rostiga knivar och klumpar av uran. Blått Fett... alla vill äga det!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="relative">
+              <Image
+                src={F28.src}
+                width={600}
+                height={600}
+                alt="F28"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="sm:absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+                <h5 className="text-md italic">Drop-in, lördag 10 oktober, från 10:00</h5>
+                <h3 className="text-xl font-bold uppercase">
+                  F28: War always changes
+                </h3>
+                {/* <h4 className="text-lg">Johanna Koljonen</h4> */}
+              </div>
+            </div>
+
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p className="font-bold">
+                  Testa narrativt figurspelande med F28: War Always Changes! Utrusta en liten grupp &quot;äventyrare&quot;, hugg tag i en kompis, och bege dig ut på halsbrytande äventyr. Råna bank eller tåg, utforska underjorden, och mycket mer! Inga förkunskaper krävs, och vi har alla figurer som behövs.
+                </p>
+                <p>
+                  Vill man ta med egna figurer så går det också bra (4+ 28mm-figurer med &quot;grimdark investigators&quot;-känsla). 90-120 minuter/spel.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="relative">
               <Image
