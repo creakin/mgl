@@ -52,8 +52,8 @@ export default async function Page() {
           <h1 className="mb-4 text-2xl font-bold md:text-4xl">
             Materialist Game Con 2026
           </h1>
-          <div className="text-xl md:text-2xl">
-            <p className="mb-4">
+          <div className="prose text-xl text-foreground md:text-2xl">
+            <p>
               Detta är ett konvent för människor som vill utforska spel ur ett
               socialistiskt DIY-perspektiv. Vi söker spelkonstruktörer,
               spelledare, figurspelare, brädspelsnördar, rollspelare,
@@ -61,16 +61,22 @@ export default async function Page() {
               kamrater.
             </p>
 
-            <p className="mb-4">
+            <p>
+              Under konventet släpps andra numret av vårt zine{" "}
+              <strong className="text-foreground font-bold">Den Onda Hobbyn</strong>, så
+              se till att vara där för att haffa ett exemplar!
+            </p>
+
+            <p>
               Det kan fortfarande finnas plats i programmet! Hör av dig om du
               vill hjälpa till eller arrangera något:
             </p>
 
-            <p className="mb-4">
+            <p>
               <a
                 href="mailto:materialistgamelabs@protonmail.com"
                 target="_blank"
-                className="underline"
+                className="underline text-foreground"
               >
                 materialistgamelabs@proton.me
               </a>
