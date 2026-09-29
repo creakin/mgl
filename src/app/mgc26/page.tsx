@@ -8,6 +8,7 @@ import Oceania from "@/assets/oceania.jpg";
 import Deserters from "@/assets/deserters.jpg";
 import Muterad from "@/assets/muterad.jpg";
 import F28 from "@/assets/f28.jpg";
+import Trans from "@/assets/trans.jpg";
 import Link from "next/link";
 
 const metadata: Metadata = {
@@ -83,8 +84,6 @@ export default async function Page() {
           Programmet fylls på löpande...
         </div>
 
-
-
         <div className="col-span-5 grid-cols-6 gap-8 md:grid">
           <h2 className="col-span-6 my-8 text-center text-2xl font-bold uppercase underline">
             Lördag
@@ -99,8 +98,10 @@ export default async function Page() {
                 alt="Muterad Medeltid"
                 className="aspect-square flex-grow-0 object-cover"
               />
-              <div className="sm:absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-                <h5 className="text-md italic">Drop-in, lördag 10 oktober, 10:00 - 18:00</h5>
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
+                <h5 className="text-md italic">
+                  Drop-in, lördag 10 oktober, 10:00 - 18:00
+                </h5>
                 <h3 className="text-xl font-bold uppercase">
                   Muterad Medeltid
                 </h3>
@@ -111,13 +112,21 @@ export default async function Page() {
             <div className="border-l-2 border-[#CC1312] pl-4">
               <div className="prose text-foreground">
                 <p className="font-bold">
-                  Europa är en gammal kvinna, ett sprucket kärl, en klanglös malm. Hennes hav är förgiftade, hennes skogar nerbrända, hennes städer raserade i grus.
+                  Europa är en gammal kvinna, ett sprucket kärl, en klanglös
+                  malm. Hennes hav är förgiftade, hennes skogar nerbrända,
+                  hennes städer raserade i grus.
                 </p>
                 <p>
-                  Men i ruinerna dröjer sig livet kvar. Muterade riddare bekämpar varandra med bredsvärd och handgranater, de slåss på den Uråldrige Kardinalens befallning, de slåss i Teloputinas namn.
+                  Men i ruinerna dröjer sig livet kvar. Muterade riddare
+                  bekämpar varandra med bredsvärd och handgranater, de slåss på
+                  den Uråldrige Kardinalens befallning, de slåss i Teloputinas
+                  namn.
                 </p>
                 <p>
-                  När bensinen är slut får Storhästar draga pansarvagnarna genom leran, när den Färska Ammunitionen ruttnar fortsätter kretiner och pestpilgrimer att slåss med rostiga knivar och klumpar av uran. Blått Fett... alla vill äga det!
+                  När bensinen är slut får Storhästar draga pansarvagnarna genom
+                  leran, när den Färska Ammunitionen ruttnar fortsätter kretiner
+                  och pestpilgrimer att slåss med rostiga knivar och klumpar av
+                  uran. Blått Fett... alla vill äga det!
                 </p>
               </div>
             </div>
@@ -132,8 +141,10 @@ export default async function Page() {
                 alt="F28"
                 className="aspect-square flex-grow-0 object-cover"
               />
-              <div className="sm:absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-                <h5 className="text-md italic">Drop-in, lördag 10 oktober, från 10:00</h5>
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
+                <h5 className="text-md italic">
+                  Drop-in, lördag 10 oktober, från 10:00
+                </h5>
                 <h3 className="text-xl font-bold uppercase">
                   F28: War always changes
                 </h3>
@@ -144,10 +155,16 @@ export default async function Page() {
             <div className="border-l-2 border-[#CC1312] pl-4">
               <div className="prose text-foreground">
                 <p className="font-bold">
-                  Testa narrativt figurspelande med F28: War Always Changes! Utrusta en liten grupp &quot;äventyrare&quot;, hugg tag i en kompis, och bege dig ut på halsbrytande äventyr. Råna bank eller tåg, utforska underjorden, och mycket mer! Inga förkunskaper krävs, och vi har alla figurer som behövs.
+                  Testa narrativt figurspelande med F28: War Always Changes!
+                  Utrusta en liten grupp &quot;äventyrare&quot;, hugg tag i en
+                  kompis, och bege dig ut på halsbrytande äventyr. Råna bank
+                  eller tåg, utforska underjorden, och mycket mer! Inga
+                  förkunskaper krävs, och vi har alla figurer som behövs.
                 </p>
                 <p>
-                  Vill man ta med egna figurer så går det också bra (4+ 28mm-figurer med &quot;grimdark investigators&quot;-känsla). 90-120 minuter/spel.
+                  Vill man ta med egna figurer så går det också bra (4+
+                  28mm-figurer med &quot;grimdark investigators&quot;-känsla).
+                  90-120 minuter/spel.
                 </p>
               </div>
             </div>
@@ -162,7 +179,7 @@ export default async function Page() {
                 alt="Johanna Koljonen"
                 className="aspect-square flex-grow-0 object-cover"
               />
-              <div className="sm:absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
                 <h5 className="text-md italic">Lördag 10 oktober, 12:00</h5>
                 <h3 className="text-xl font-bold uppercase">
                   Spelkonvent som motstånd och demokratisk infrastruktur
@@ -197,7 +214,7 @@ export default async function Page() {
                 alt="Oceania 2084"
                 className="aspect-square flex-grow-0 object-cover"
               />
-              <div className="sm:absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
                 <h5 className="text-md italic">
                   Lördag 10 oktober, föredrag 13:00 & spel ca. 14:00
                 </h5>
@@ -251,7 +268,7 @@ export default async function Page() {
                 alt="Deserters"
                 className="aspect-square flex-grow-0 object-cover"
               />
-              <div className="sm:absolute bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
                 <h5 className="text-md italic">
                   Lördag 10 oktober, 14:00 - 18:00
                 </h5>
@@ -284,6 +301,48 @@ export default async function Page() {
             </div>
           </div>
 
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="relative">
+              <Image
+                src={Trans.src}
+                width={600}
+                height={600}
+                alt="Deserters"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
+                <h5 className="text-md italic">
+                  Lördag 10 oktober, 18:00 - 22:00
+                </h5>
+                <h3 className="text-xl font-bold uppercase">
+                  Transchronologicum
+                </h3>
+                <h4 className="text-lg">
+                  Rollspel för 3 grupper som spelar samtidigt!
+                </h4>
+              </div>
+            </div>
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p className="">
+                  En uråldrig, nyss framsprungen och ännu inte påkommen ondska
+                  hotar att ha fått fotfäste, återvända och göra sig tillkänna.
+                  Svåröverskådliga ödestrådar vävs samman av en osedd kraft för
+                  att sätta en liten grupp hjältar i dess väg.
+                </p>
+                <p>
+                  Har ni, kommer ni ha, eller har ni haft det som krävs för att
+                  avstyra den katastrof som redan skett, pågår just nu, eller
+                  ännu inte har fullbordats?
+                </p>
+                <p>
+                  Transchronologicum är ett rollspelsscenario utöver det vanliga
+                  med upp till 12 spelare, 3 spelledare och en hissnande färd
+                  genom tid och rum.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="col-span-5 my-4 text-center italic">
