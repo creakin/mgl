@@ -10,6 +10,7 @@ import Muterad from "@/assets/muterad.jpg";
 import F28 from "@/assets/f28.jpg";
 import Trans from "@/assets/trans.jpg";
 import Hobbyn from "@/assets/hobbyn.jpg";
+import India from "@/assets/india.png";
 import Link from "next/link";
 
 const metadata: Metadata = {
@@ -99,14 +100,41 @@ export default async function Page() {
           </div>
         </div>
 
-        <div className="col-span-2 mb-8 text-center">
+<div className="col-span-2 mb-8 text-center">
           <Image
             src={Hobbyn.src}
             width={600}
             height={300}
-            alt="Den Onda Hobbyn #2"
+            alt="Den Onda Hobbyn, volym 2"
           />
         </div>
+
+        <hr className="col-span-5 my-8" />
+
+        <div className="col-span-2 mb-8 text-center">
+          <Image
+            src={India.src}
+            width={600}
+            height={300}
+            alt="India Däck Logotyp"
+          />
+        </div>
+
+        <div className="col-span-3">
+          <h1 className="mb-4 text-2xl font-bold md:text-4xl">
+            India Däck
+          </h1>
+          <div className="prose text-xl text-foreground md:text-2xl mb-8">
+            <p>
+              India Däck kommer att vara på plats och erbjuda kaffe, te, snacks, bokbord, och säkert en pamflett eller coolt klistermärke. 
+            </p>
+
+            <p>
+              Utan hjälp från rutinerade kamrater från Lunds socialistiska bokcafé skulle det här bli ett sämre event, så vi är glada att de är med!
+            </p>
+          </div>
+        </div>
+
 
 
         <hr className="col-span-5" />
