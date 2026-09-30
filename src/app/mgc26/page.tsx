@@ -11,6 +11,7 @@ import F28 from "@/assets/f28.jpg";
 import Trans from "@/assets/trans.jpg";
 import Hobbyn from "@/assets/hobbyn.jpg";
 import India from "@/assets/india.png";
+import Battletech from "@/assets/battletech.jpg";
 import Link from "next/link";
 
 const metadata: Metadata = {
@@ -36,7 +37,6 @@ export default async function Page() {
     <Suspense fallback={"Laddar..."}>
       <IndexLink />
       <article className="col-span-5 grid-cols-5 gap-8 md:grid">
-
         <div className="col-span-2 mb-8 text-center">
           <Image
             src={Mgc26Logo.src}
@@ -73,7 +73,7 @@ export default async function Page() {
               <a
                 href="mailto:materialistgamelabs@protonmail.com"
                 target="_blank"
-                className="underline text-foreground"
+                className="text-foreground underline"
               >
                 materialistgamelabs@proton.me
               </a>
@@ -84,23 +84,29 @@ export default async function Page() {
         <hr className="col-span-5 my-8" />
 
         <div className="col-span-3">
-          <h1 className="mb-4 text-2xl font-bold md:text-4xl">
+          <h2 className="mb-4 text-2xl font-bold md:text-4xl">
             Den Onda Hobbyn, volym 2
-          </h1>
-          <div className="prose text-xl text-foreground md:text-2xl mb-8">
+          </h2>
+          <div className="prose mb-8 text-xl text-foreground md:text-2xl">
             <p>
               Under konventet släpps andra numret av vårt zine{" "}
-              <strong className="text-foreground font-bold">Den Onda Hobbyn</strong>, så
-              se till att vara där för att haffa ett exemplar!
+              <strong className="font-bold text-foreground">
+                Den Onda Hobbyn
+              </strong>
+              , så se till att vara där för att haffa ett exemplar!
             </p>
 
             <p>
-              Om du missade vårt första nummer kan du läsa det i digitalt format här: <Link href="/den-onda-hobbyn-1" className="text-foreground">Den Onda Hobbyn, volym 1</Link>
+              Om du missade vårt första nummer kan du läsa det i digitalt format
+              här:{" "}
+              <Link href="/den-onda-hobbyn-1" className="text-foreground">
+                Den Onda Hobbyn, volym 1
+              </Link>
             </p>
           </div>
         </div>
 
-<div className="col-span-2 mb-8 text-center">
+        <div className="col-span-2 mb-8 text-center">
           <Image
             src={Hobbyn.src}
             width={600}
@@ -121,36 +127,78 @@ export default async function Page() {
         </div>
 
         <div className="col-span-3">
-          <h1 className="mb-4 text-2xl font-bold md:text-4xl">
-            India Däck
-          </h1>
-          <div className="prose text-xl text-foreground md:text-2xl mb-8">
+          <h2 className="mb-4 text-2xl font-bold md:text-4xl">India Däck</h2>
+          <div className="prose mb-8 text-xl text-foreground md:text-2xl">
             <p className="font-bold">
-              Inget konvent utan kaffe.<br />
+              Inget konvent utan kaffe.
+              <br />
               Ingen organisering utan studier.
             </p>
             <p>
-              India Däck kommer att vara på plats och erbjuda kaffe, te, snacks, bokbord, och säkert en pamflett eller coolt klistermärke. 
+              India Däck kommer att vara på plats och erbjuda kaffe, te, snacks,
+              bokbord, och säkert en pamflett eller coolt klistermärke.
             </p>
 
             <p>
-              Utan hjälp från rutinerade kamrater från Lunds socialistiska bokcafé skulle det här bli ett sämre event, så vi är glada att de är med!
+              Utan hjälp från rutinerade kamrater från Lunds socialistiska
+              bokcafé skulle det här bli ett sämre event, så vi är glada att de
+              är med!
             </p>
           </div>
         </div>
 
-
-
         <hr className="col-span-5" />
 
-        <div className="col-span-5 my-4 text-center italic">
-          Programmet fylls på löpande...
+        <div className="col-span-3 col-start-2 text-center prose text-foreground">
+          <h2 className="mb-4 text-2xl font-bold md:text-4xl text-foreground">Schema</h2>
+          <p>
+            <Link href="https://mglabs.se/media/MGC2026-Schema.pdf" className="text-foreground underline font-bold"> Klicka här för att ladda ner hela schemat som PDF.</Link><br />
+            Eller scrolla vidare...
+          </p>
+        </div>
+
+        <div className="col-span-5 grid-cols-6 gap-8 md:grid">
+          <h2 className="col-span-6 my-8 text-center text-2xl font-bold uppercase underline">
+            Fredag
+          </h2>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <h5 className="text-md italic">Fredag 9 oktober, 18:00 - 21:00</h5>
+              <h3 className="text-xl font-bold uppercase">
+                Invigning, Zine, Quiz
+              </h3>
+            </div>
+          </div>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <h5 className="text-md italic">Fredag 9 oktober, 21:00 - 02:00</h5>
+              <h3 className="text-xl font-bold uppercase">
+                Spel & mingla fritt
+              </h3>
+            </div>
+          </div>
         </div>
 
         <div className="col-span-5 grid-cols-6 gap-8 md:grid">
           <h2 className="col-span-6 my-8 text-center text-2xl font-bold uppercase underline">
             Lördag
           </h2>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <h5 className="text-md italic">Lördag 10 oktober, 10:00 - 12:00</h5>
+              <h3 className="text-xl font-bold uppercase">Nördloppis</h3>
+            </div>
+          </div>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <h5 className="text-md italic">Lördag 10 oktober, 10:00 - 12:00</h5>
+              <h3 className="text-xl font-bold uppercase">Tavernaspel</h3>
+            </div>
+          </div>
 
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="relative">
@@ -325,6 +373,44 @@ export default async function Page() {
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="relative">
               <Image
+                src={Battletech.src}
+                width={600}
+                height={600}
+                alt="Battletech"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
+                <h5 className="text-md italic">
+                  Lördag 10 oktober, 14:00 - 18:00
+                </h5>
+                <h3 className="text-xl font-bold uppercase">
+                  Battletech: Operation Drakdräparen
+                </h3>
+                <h4 className="text-lg">Intro till figurspelet och en kampanjs hybris</h4>
+              </div>
+            </div>
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p className="font-bold">
+                  Välkommen till BattleTech intro! Kom för de jättestora robotarna och stanna för en episk rymdopera-setting vi spelar i en enorm strategisk kampanj! Rent konkret erbjuder detta event att ta del av kampanjen genom att testa flera olika av BattleTech systemen med olika grad av komplexitet.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <h5 className="text-md italic">Lördag 10 oktober, 14:00 - 18:00</h5>
+              <h3 className="text-xl font-bold uppercase">
+                Human & Envrionment
+              </h3>
+            </div>
+          </div>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="relative">
+              <Image
                 src={Deserters.src}
                 width={600}
                 height={600}
@@ -406,10 +492,134 @@ export default async function Page() {
               </div>
             </div>
           </div>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <h5 className="text-md italic">Lördag 10 oktober, 22:00 - 02:00</h5>
+              <h3 className="text-xl font-bold uppercase">Wyrms & Warrens</h3>
+            </div>
+          </div>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <h5 className="text-md italic">Lördag 10 oktober, Hela dagen</h5>
+              <h3 className="text-xl font-bold uppercase">
+                Spelbar, Kitbash-hörna, café
+              </h3>
+            </div>
+          </div>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <h5 className="text-md italic">Lördag 10 oktober, Kväll/natt</h5>
+              <h3 className="text-xl font-bold uppercase">
+                Spela & mingla fritt
+              </h3>
+            </div>
+          </div>
         </div>
 
-        <div className="col-span-5 my-4 text-center italic">
-          Programmet fylls på löpande...
+        <div className="col-span-5 grid-cols-6 gap-8 md:grid">
+          <h2 className="col-span-6 my-8 text-center text-2xl font-bold uppercase underline">
+            Söndag
+          </h2>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <h5 className="text-md italic">Söndag 11 oktober, 10:00 - 14:00</h5>
+              <h3 className="text-xl font-bold uppercase">
+                Spanska inbördeskriget
+              </h3>
+            </div>
+          </div>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="relative">
+              <Image
+                src={Muterad.src}
+                width={600}
+                height={600}
+                alt="Muterad Medeltid"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
+                <h5 className="text-md italic">
+                  Drop-in, söndag 11 oktober, 14:00 - 17:00
+                </h5>
+                <h3 className="text-xl font-bold uppercase">
+                  Muterad Medeltid
+                </h3>
+                {/* <h4 className="text-lg">Johanna Koljonen</h4> */}
+              </div>
+            </div>
+
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p className="font-bold">
+                  Europa är en gammal kvinna, ett sprucket kärl, en klanglös
+                  malm. Hennes hav är förgiftade, hennes skogar nerbrända,
+                  hennes städer raserade i grus.
+                </p>
+                <p>
+                  Men i ruinerna dröjer sig livet kvar. Muterade riddare
+                  bekämpar varandra med bredsvärd och handgranater, de slåss på
+                  den Uråldrige Kardinalens befallning, de slåss i Teloputinas
+                  namn.
+                </p>
+                <p>
+                  När bensinen är slut får Storhästar draga pansarvagnarna genom
+                  leran, när den Färska Ammunitionen ruttnar fortsätter kretiner
+                  och pestpilgrimer att slåss med rostiga knivar och klumpar av
+                  uran. Blått Fett... alla vill äga det!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
+              <h5 className="text-md italic">Söndag 11 oktober, 14:30 - 17:00</h5>
+              <h3 className="text-xl font-bold uppercase">Spelverkstad</h3>
+            </div>
+          </div>
+        </div>
+
+        <hr className="col-span-5 my-8" />
+
+        <div className="col-span-3 col-start-2">
+          <h2 className="mb-4 text-2xl font-bold md:text-4xl">
+            Övrig information om konventet
+          </h2>
+          <div className="text-md prose mb-8 text-foreground">
+            <h3 className="text-lg font-bold text-foreground">INTRÄDE</h3>
+            <p>
+              Konventet är gratis, men eftersom du såklart vill köpa vårt zine
+              uppmanar vi alla att passa på att donera extra efter förmåga när
+              ni ändå swishar.
+            </p>
+
+            <h3 className="text-lg font-bold text-foreground">SOVPLATSER</h3>
+            <p>
+              Vi får inte sova i lokalerna, men vi försöker hitta sovplats åt de
+              som behöver. Om du kan erbjuda sovplats till någon kamrat, maila
+              till: materialistgamelabs@proton.me
+            </p>
+
+            <h3 className="text-lg font-bold text-foreground">STÄD</h3>
+            <p>
+              Detta är ett konvent vi skapar tillsammans. Vi har alla ett ansvar
+              att hålla rent och ta hand om lokalerna som Kvarnby Folkhögskola
+              lånar ut till oss. Den som hjälper till att städa förtjänar tumme
+              upp och glada tillrop.
+            </p>
+
+            <h3 className="text-lg font-bold text-foreground">UPPFÖRANDE</h3>
+            <p>
+              Vi i arrangörsgruppen förbehåller oss rätten att avvisa folk som
+              inte kan bete sig. Diskriminering, kränkningar och slemmigt
+              beteende hör inte hemma på våra event.
+            </p>
+          </div>
         </div>
       </article>
     </Suspense>
