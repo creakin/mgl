@@ -125,6 +125,10 @@ export default async function Page() {
             India Däck
           </h1>
           <div className="prose text-xl text-foreground md:text-2xl mb-8">
+            <p className="font-bold">
+              Inget konvent utan kaffe.<br />
+              Ingen organisering utan studier.
+            </p>
             <p>
               India Däck kommer att vara på plats och erbjuda kaffe, te, snacks, bokbord, och säkert en pamflett eller coolt klistermärke. 
             </p>
