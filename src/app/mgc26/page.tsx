@@ -196,7 +196,7 @@ export default async function Page() {
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
               <h5 className="text-md italic">Lördag 10 oktober, 10:00 - 12:00</h5>
-              <h3 className="text-xl font-bold uppercase">Tavernaspel</h3>
+              <h3 className="text-xl font-bold uppercase">RatSnake</h3>
             </div>
           </div>
 
@@ -401,7 +401,7 @@ export default async function Page() {
 
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">Lördag 10 oktober, 14:00 - 18:00</h5>
+              <h5 className="text-md italic">Lördag 10 oktober, 14:00 - 18:00 och 22:00 - 00:00</h5>
               <h3 className="text-xl font-bold uppercase">
                 Human & Envrionment
               </h3>
