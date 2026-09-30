@@ -9,6 +9,7 @@ import Deserters from "@/assets/deserters.jpg";
 import Muterad from "@/assets/muterad.jpg";
 import F28 from "@/assets/f28.jpg";
 import Trans from "@/assets/trans.jpg";
+import Hobbyn from "@/assets/hobbyn.jpg";
 import Link from "next/link";
 
 const metadata: Metadata = {
@@ -34,12 +35,13 @@ export default async function Page() {
     <Suspense fallback={"Laddar..."}>
       <IndexLink />
       <article className="col-span-5 grid-cols-5 gap-8 md:grid">
+
         <div className="col-span-2 mb-8 text-center">
           <Image
             src={Mgc26Logo.src}
             width={600}
             height={300}
-            alt="Materialist Game Labs logo"
+            alt="Materialist Game Con logo"
           />
           <h2 className="text-4xl font-bold">9 - 11 oktober</h2>
           <h3 className="font-bold">
@@ -62,12 +64,6 @@ export default async function Page() {
             </p>
 
             <p>
-              Under konventet släpps andra numret av vårt zine{" "}
-              <strong className="text-foreground font-bold">Den Onda Hobbyn</strong>, så
-              se till att vara där för att haffa ett exemplar!
-            </p>
-
-            <p>
               Det kan fortfarande finnas plats i programmet! Hör av dig om du
               vill hjälpa till eller arrangera något:
             </p>
@@ -83,6 +79,35 @@ export default async function Page() {
             </p>
           </div>
         </div>
+
+        <hr className="col-span-5 my-8" />
+
+        <div className="col-span-3">
+          <h1 className="mb-4 text-2xl font-bold md:text-4xl">
+            Den Onda Hobbyn, volym 2
+          </h1>
+          <div className="prose text-xl text-foreground md:text-2xl mb-8">
+            <p>
+              Under konventet släpps andra numret av vårt zine{" "}
+              <strong className="text-foreground font-bold">Den Onda Hobbyn</strong>, så
+              se till att vara där för att haffa ett exemplar!
+            </p>
+
+            <p>
+              Om du missade vårt första nummer kan du läsa det i digitalt format här: <Link href="/den-onda-hobbyn-1" className="text-foreground">Den Onda Hobbyn, volym 1</Link>
+            </p>
+          </div>
+        </div>
+
+        <div className="col-span-2 mb-8 text-center">
+          <Image
+            src={Hobbyn.src}
+            width={600}
+            height={300}
+            alt="Den Onda Hobbyn #2"
+          />
+        </div>
+
 
         <hr className="col-span-5" />
 
