@@ -11,6 +11,8 @@ import F28 from "@/assets/f28.jpg";
 import Trans from "@/assets/trans.jpg";
 import Hobbyn from "@/assets/hobbyn.jpg";
 import India from "@/assets/india.png";
+import Kitbash from "@/assets/kitbash.jpg";
+import Human from "@/assets/human.jpg";
 import Battletech from "@/assets/battletech.jpg";
 import Link from "next/link";
 
@@ -149,10 +151,19 @@ export default async function Page() {
 
         <hr className="col-span-5" />
 
-        <div className="col-span-3 col-start-2 text-center prose text-foreground">
-          <h2 className="mb-4 text-2xl font-bold md:text-4xl text-foreground">Schema</h2>
+        <div className="prose col-span-3 col-start-2 text-center text-foreground">
+          <h2 className="mb-4 text-2xl font-bold text-foreground md:text-4xl">
+            Schema
+          </h2>
           <p>
-            <Link href="https://mglabs.se/media/MGC2026-Schema.pdf" className="text-foreground underline font-bold"> Klicka här för att ladda ner hela schemat som PDF.</Link><br />
+            <Link
+              href="https://mglabs.se/media/MGC2026-Schema.pdf"
+              className="font-bold text-foreground underline"
+            >
+              {" "}
+              Klicka här för att ladda ner hela schemat som PDF.
+            </Link>
+            <br />
             Eller scrolla vidare...
           </p>
         </div>
@@ -164,7 +175,9 @@ export default async function Page() {
 
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">Fredag 9 oktober, 18:00 - 21:00</h5>
+              <h5 className="text-md italic">
+                Fredag 9 oktober, 18:00 - 21:00
+              </h5>
               <h3 className="text-xl font-bold uppercase">
                 Invigning, Zine, Quiz
               </h3>
@@ -173,7 +186,9 @@ export default async function Page() {
 
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">Fredag 9 oktober, 21:00 - 02:00</h5>
+              <h5 className="text-md italic">
+                Fredag 9 oktober, 21:00 - 02:00
+              </h5>
               <h3 className="text-xl font-bold uppercase">
                 Spel & mingla fritt
               </h3>
@@ -188,14 +203,18 @@ export default async function Page() {
 
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">Lördag 10 oktober, 10:00 - 12:00</h5>
+              <h5 className="text-md italic">
+                Lördag 10 oktober, 10:00 - 12:00
+              </h5>
               <h3 className="text-xl font-bold uppercase">Nördloppis</h3>
             </div>
           </div>
 
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">Lördag 10 oktober, 10:00 - 12:00</h5>
+              <h5 className="text-md italic">
+                Lördag 10 oktober, 10:00 - 12:00
+              </h5>
               <h3 className="text-xl font-bold uppercase">RatSnake</h3>
             </div>
           </div>
@@ -386,25 +405,54 @@ export default async function Page() {
                 <h3 className="text-xl font-bold uppercase">
                   Battletech: Operation Drakdräparen
                 </h3>
-                <h4 className="text-lg">Intro till figurspelet och en kampanjs hybris</h4>
+                <h4 className="text-lg">
+                  Intro till figurspelet och en kampanjs hybris
+                </h4>
               </div>
             </div>
             <div className="border-l-2 border-[#CC1312] pl-4">
               <div className="prose text-foreground">
                 <p className="font-bold">
-                  Välkommen till BattleTech intro! Kom för de jättestora robotarna och stanna för en episk rymdopera-setting vi spelar i en enorm strategisk kampanj! Rent konkret erbjuder detta event att ta del av kampanjen genom att testa flera olika av BattleTech systemen med olika grad av komplexitet.
+                  Välkommen till BattleTech intro! Kom för de jättestora
+                  robotarna och stanna för en episk rymdopera-setting vi spelar
+                  i en enorm strategisk kampanj! Rent konkret erbjuder detta
+                  event att ta del av kampanjen genom att testa flera olika av
+                  BattleTech systemen med olika grad av komplexitet.
                 </p>
               </div>
             </div>
           </div>
 
-
           <div className="col-span-3 mb-8 md:mb-0">
-            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">Lördag 10 oktober, 14:00 - 18:00 och 22:00 - 00:00</h5>
-              <h3 className="text-xl font-bold uppercase">
-                Human & Envrionment
-              </h3>
+            <div className="relative">
+              <Image
+                src={Human.src}
+                width={600}
+                height={600}
+                alt="Human & Envrionment"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
+                <h5 className="text-md italic">
+                  Lördag 10 oktober, 14:00 - 18:00 och 22:00 - 00:00
+                </h5>
+                <h3 className="text-xl font-bold uppercase">
+                  Human & Envrionment
+                </h3>
+                <h4 className="text-lg">Speltest!</h4>
+              </div>
+            </div>
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p className="">
+                  Spelet skildrar världshistoria från jordbruket till den
+                  industriella revolutionen på en strukturell nivå. Kärnorna i
+                  spelet är domesticering av grödor och djur, handel,
+                  teknologisk utveckling och civilisationers spridning över
+                  världskartan. Hög spelarinteraktion, något komplext, 3-4
+                  timmar speltid.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -495,17 +543,44 @@ export default async function Page() {
 
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">Lördag 10 oktober, 22:00 - 02:00</h5>
+              <h5 className="text-md italic">
+                Lördag 10 oktober, 22:00 - 02:00
+              </h5>
               <h3 className="text-xl font-bold uppercase">Wyrms & Warrens</h3>
             </div>
           </div>
 
           <div className="col-span-3 mb-8 md:mb-0">
-            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">Lördag 10 oktober, Hela dagen</h5>
-              <h3 className="text-xl font-bold uppercase">
-                Spelbar, Kitbash-hörna, café
-              </h3>
+            <div className="relative">
+              <Image
+                src={Kitbash.src}
+                width={600}
+                height={600}
+                alt="Kitbash"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
+                <h5 className="text-md italic">
+                  Lördag 10 oktober, Hela dagen
+                </h5>
+                <h3 className="text-xl font-bold uppercase">
+                  Spelbar, Kitbash-hörna, café
+                </h3>
+              </div>
+            </div>
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p className="">
+                  Bortom plastmånglare som Games Workshop, bortom deras idéer om
+                  hur figurer ska se ut existerar en vild värld av freaks,
+                  monster och förryckta skapelser. Dessa frammanas genom
+                  kitbashing. På Materialist Game Con kommer du kunna tvinga
+                  ihop plast till nya oheliga skapelser.
+                </p>
+                <p>
+                  Har du plast över att donera till kitbash-hörnan? Hör av dig!
+                </p>
+              </div>
             </div>
           </div>
 
@@ -526,7 +601,9 @@ export default async function Page() {
 
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">Söndag 11 oktober, 10:00 - 14:00</h5>
+              <h5 className="text-md italic">
+                Söndag 11 oktober, 10:00 - 14:00
+              </h5>
               <h3 className="text-xl font-bold uppercase">
                 Spanska inbördeskriget
               </h3>
@@ -578,7 +655,9 @@ export default async function Page() {
 
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">Söndag 11 oktober, 14:30 - 17:00</h5>
+              <h5 className="text-md italic">
+                Söndag 11 oktober, 14:30 - 17:00
+              </h5>
               <h3 className="text-xl font-bold uppercase">Spelverkstad</h3>
             </div>
           </div>
