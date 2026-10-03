@@ -209,7 +209,7 @@ export default async function Page() {
             <div className="border-l-2 border-[#CC1312] pl-4">
               <div className="prose text-foreground">
                 <p className="">
-                  Tom (poddpratare i Spel eller Barbari och Märklighetstroget)
+                  Thom (poddpratare i Spel eller Barbari och Märklighetstroget)
                   är quiz-master. Spela med folk du inte redan känner, ge oss
                   dina bästa gissningar och se om just ditt lag vinner ett dumt,
                   dumt pris. Det blir kul!
