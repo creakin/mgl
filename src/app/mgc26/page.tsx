@@ -14,6 +14,9 @@ import India from "@/assets/india.png";
 import Kitbash from "@/assets/kitbash.jpg";
 import Human from "@/assets/human.jpg";
 import Battletech from "@/assets/battletech.jpg";
+import Quiz from "@/assets/quiz.jpg";
+import Spanska from "@/assets/spanska.jpg";
+import Loppis from "@/assets/loppis.jpg";
 import Link from "next/link";
 
 const metadata: Metadata = {
@@ -175,12 +178,42 @@ export default async function Page() {
 
           <div className="col-span-3 mb-8 md:mb-0">
             <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">
-                Fredag 9 oktober, 18:00 - 21:00
-              </h5>
+              <h5 className="text-md italic"></h5>
               <h3 className="text-xl font-bold uppercase">
                 Invigning, Zine, Quiz
               </h3>
+            </div>
+          </div>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="relative">
+              <Image
+                src={Quiz.src}
+                width={600}
+                height={600}
+                alt="Quiz master"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
+                <h5 className="text-md italic">
+                  Fredag 9 oktober, 18:00 - 21:00
+                </h5>
+                <h3 className="text-xl font-bold uppercase">
+                  Invigning, Zine, Quiz
+                </h3>
+                {/* <h4 className="text-lg">Johanna Koljonen</h4> */}
+              </div>
+            </div>
+
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p className="">
+                  Tom (poddpratare i Spel eller Barbari och Märklighetstroget)
+                  är quiz-master. Spela med folk du inte redan känner, ge oss
+                  dina bästa gissningar och se om just ditt lag vinner ett dumt,
+                  dumt pris. Det blir kul!
+                </p>
+              </div>
             </div>
           </div>
 
@@ -202,11 +235,32 @@ export default async function Page() {
           </h2>
 
           <div className="col-span-3 mb-8 md:mb-0">
-            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">
-                Lördag 10 oktober, 10:00 - 12:00
-              </h5>
-              <h3 className="text-xl font-bold uppercase">Nördloppis</h3>
+            <div className="relative">
+              <Image
+                src={Loppis.src}
+                width={600}
+                height={600}
+                alt="Nördloppis"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
+                <h5 className="text-md italic">
+                  Lördag 10 oktober, 10:00 - 12:00
+                </h5>
+                <h3 className="text-xl font-bold uppercase">Nördloppis</h3>
+                {/* <h4 className="text-lg">Johanna Koljonen</h4> */}
+              </div>
+            </div>
+
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p className="font-bold">
+                  På nördloppisen och hittar den där grejen du inte visste att
+                  du villhövde. Byt, sälj, ge bort och fynda! Ta med spel som
+                  aldrig spelas och ge dem ett nytt hem. Ingen föranmälan, drop
+                  in och först till kvarn gäller.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -600,13 +654,33 @@ export default async function Page() {
           </h2>
 
           <div className="col-span-3 mb-8 md:mb-0">
-            <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">
-                Söndag 11 oktober, 10:00 - 14:00
-              </h5>
-              <h3 className="text-xl font-bold uppercase">
-                Spanska inbördeskriget
-              </h3>
+            <div className="relative">
+              <Image
+                src={Spanska.src}
+                width={600}
+                height={600}
+                alt="Spanska Inbördeskriget"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
+                <h5 className="text-md italic">
+                  Söndag 11 oktober, 10:00 - 14:00
+                </h5>
+                <h3 className="text-xl font-bold uppercase">
+                  Spanska inbördeskriget
+                </h3>
+                <h4 className="text-lg">Megagame</h4>
+              </div>
+            </div>
+
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p className="">
+                  Delta i spanska inbördeskriget som aldrig förr. Med lite tur
+                  så är dina värsta fiender på andra sidan linjen och inte din
+                  granne. Inga förkunskaper krävs. Ca 4 timmar.
+                </p>
+              </div>
             </div>
           </div>
 
