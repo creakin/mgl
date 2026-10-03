@@ -17,6 +17,7 @@ import Battletech from "@/assets/battletech.jpg";
 import Quiz from "@/assets/quiz.jpg";
 import Spanska from "@/assets/spanska.jpg";
 import Loppis from "@/assets/loppis.jpg";
+import Forgetful from "@/assets/forgetful.jpg";
 import Link from "next/link";
 
 const metadata: Metadata = {
@@ -270,6 +271,41 @@ export default async function Page() {
                 Lördag 10 oktober, 10:00 - 12:00
               </h5>
               <h3 className="text-xl font-bold uppercase">RatSnake</h3>
+            </div>
+          </div>
+
+          <div className="col-span-3 mb-8 md:mb-0">
+            <div className="relative">
+              <Image
+                src={Forgetful.src}
+                width={600}
+                height={600}
+                alt="The Forgetful Kindred"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
+                <h5 className="text-md italic">
+                  Lördag 10 oktober, 10:00 - 14:00
+                </h5>
+                <h3 className="text-xl font-bold uppercase">
+                  The Forgetful Kindred
+                </h3>
+                <h4 className="text-lg">
+                  Poetic storytelling game about forgetting and community
+                </h4>
+              </div>
+            </div>
+
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p>
+                  The Forgetful Kindred is a storytelling and symbol drawing
+                  role playing game where players write down the history of
+                  their own group of forgetful utopians. You create your own
+                  symbols and stories that add to the history book but slowly
+                  over time the pages are forgotten or altered by time.
+                </p>
+              </div>
             </div>
           </div>
 
