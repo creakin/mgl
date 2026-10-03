@@ -669,7 +669,7 @@ export default async function Page() {
                 <h3 className="text-xl font-bold uppercase">
                   Spanska inbördeskriget
                 </h3>
-                <h4 className="text-lg">Megagame</h4>
+                <h4 className="text-lg">Unikt megagame för 15 personer</h4>
               </div>
             </div>
 
