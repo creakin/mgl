@@ -114,9 +114,9 @@ export function InfoItem({
   children: ReactNode;
 }) {
   return (
-    <>
+    <div>
       <h3 className="text-lg font-bold text-foreground">{title}</h3>
       <p>{children}</p>
-    </>
+    </div>
   );
 }

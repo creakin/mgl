@@ -166,6 +166,34 @@ export default async function Page() {
 
         <hr className="col-span-5" />
 
+        <div className="col-span-5 my-8">
+           <div className="grid md:grid-cols-2 gap-8 text-md mb-8 text-foreground w-full">
+            <InfoItem title="INTRÄDE">
+              Konventet är gratis, men eftersom du såklart vill köpa vårt zine
+              uppmanar vi alla att passa på att donera extra efter förmåga när
+              ni ändå swishar.
+            </InfoItem>
+            <InfoItem title="SOVPLATSER">
+              Vi får inte sova i lokalerna, men vi försöker hitta sovplats åt de
+              som behöver. Om du kan erbjuda sovplats till någon kamrat, maila
+              till: {CONTACT_EMAIL}
+            </InfoItem>
+            <InfoItem title="STÄD">
+              Detta är ett konvent vi skapar tillsammans. Vi har alla ett ansvar
+              att hålla rent och ta hand om lokalerna som Kvarnby Folkhögskola
+              lånar ut till oss. Den som hjälper till att städa förtjänar tumme
+              upp och glada tillrop.
+            </InfoItem>
+            <InfoItem title="UPPFÖRANDE">
+              Vi i arrangörsgruppen förbehåller oss rätten att avvisa folk som
+              inte kan bete sig. Diskriminering, kränkningar och slemmigt
+              beteende hör inte hemma på våra event.
+            </InfoItem>
+           </div>
+        </div>
+
+        <hr className="col-span-5" />
+
         <div className="prose col-span-3 col-start-2 text-center text-foreground">
           <h2 className="mb-4 text-2xl font-bold text-foreground md:text-4xl">
             Schema
@@ -473,37 +501,6 @@ export default async function Page() {
             <p>Inga förkunskaper eller material krävs, vi har allt på plats!</p>
           </ScheduleItem>
         </ScheduleDay>
-
-        <hr className="col-span-5 my-8" />
-
-        <div className="col-span-3 col-start-2">
-          <h2 className="mb-4 text-2xl font-bold md:text-4xl">
-            Övrig information om konventet
-          </h2>
-          <div className="text-md prose mb-8 text-foreground">
-            <InfoItem title="INTRÄDE">
-              Konventet är gratis, men eftersom du såklart vill köpa vårt zine
-              uppmanar vi alla att passa på att donera extra efter förmåga när
-              ni ändå swishar.
-            </InfoItem>
-            <InfoItem title="SOVPLATSER">
-              Vi får inte sova i lokalerna, men vi försöker hitta sovplats åt de
-              som behöver. Om du kan erbjuda sovplats till någon kamrat, maila
-              till: {CONTACT_EMAIL}
-            </InfoItem>
-            <InfoItem title="STÄD">
-              Detta är ett konvent vi skapar tillsammans. Vi har alla ett ansvar
-              att hålla rent och ta hand om lokalerna som Kvarnby Folkhögskola
-              lånar ut till oss. Den som hjälper till att städa förtjänar tumme
-              upp och glada tillrop.
-            </InfoItem>
-            <InfoItem title="UPPFÖRANDE">
-              Vi i arrangörsgruppen förbehåller oss rätten att avvisa folk som
-              inte kan bete sig. Diskriminering, kränkningar och slemmigt
-              beteende hör inte hemma på våra event.
-            </InfoItem>
-          </div>
-        </div>
       </article>
     </Suspense>
   );
