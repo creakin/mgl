@@ -95,7 +95,7 @@ export default async function Page() {
           </h1>
           <div className="prose text-xl text-foreground md:text-2xl">
             <p>
-              Detta är ett konvent för människor som vill utforska spel ur ett
+              Detta är ett gratis konvent för människor som vill utforska spel ur ett
               socialistiskt DIY-perspektiv. Vi söker spelkonstruktörer,
               spelledare, figurspelare, brädspelsnördar, rollspelare,
               aktivister, tänkare, konstnärer, hackers, gruntar och nyfikna
