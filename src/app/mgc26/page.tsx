@@ -18,6 +18,7 @@ import Quiz from "@/assets/quiz.jpg";
 import Spanska from "@/assets/spanska.jpg";
 import Loppis from "@/assets/loppis.jpg";
 import Forgetful from "@/assets/forgetful.jpg";
+import Spelverkstad from "@/assets/spelverkstad.jpg";
 import Link from "next/link";
 
 const metadata: Metadata = {
@@ -764,11 +765,57 @@ export default async function Page() {
           </div>
 
           <div className="col-span-3 mb-8 md:mb-0">
+            <div className="relative">
+              <Image
+                src={Spelverkstad.src}
+                width={600}
+                height={600}
+                alt="Revolutionär Spelverkstad"
+                className="aspect-square flex-grow-0 object-cover"
+              />
+              <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4 sm:absolute">
+                <h5 className="text-md italic">
+                  Söndag 11 oktober, 14:30 - 17:00
+                </h5>
+                <h3 className="text-xl font-bold uppercase">
+                  Revolutionär Spelverkstad
+                </h3>
+              </div>
+            </div>
+
+            <div className="border-l-2 border-[#CC1312] pl-4">
+              <div className="prose text-foreground">
+                <p className="font-bold">
+                  En värld att vinna: Revolutionär spelverkstad
+                </p>
+                <p>
+                  Vad kan vi lära oss om hur våra fiender resonerar, vilka
+                  strategier vi ska använda och hur världen hänger ihop genom
+                  spel? Genom att skapa och spela spel undersöker vi dessa, och
+                  säkert många andra frågor.
+                </p>
+                <p>
+                  Vi delar erfarenheter, teorier och infall, för att gemensamt
+                  skapa något som är både kul, tankeväckande och lärorikt. I ett
+                  så kallat &quot;game jam&quot; utforskar vi tillsammans
+                  möjligheterna att använda och skapa spel i revolutionens
+                  tjänst!
+                </p>
+                <p>
+                  Inga förkunskaper eller material krävs, vi har allt på plats!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-span-3 mb-8 md:mb-0">
             <div className="bottom-0 left-0 right-0 border-l-2 border-[#CC1312] bg-background/80 p-4">
-              <h5 className="text-md italic">
-                Söndag 11 oktober, 14:30 - 17:00
-              </h5>
-              <h3 className="text-xl font-bold uppercase">Spelverkstad</h3>
+              <h5 className="text-md italic"></h5>
+              <h3 className="text-xl font-bold uppercase"></h3>
+
+              <h4 className="text-lg">
+                Rollspel för 3 grupper som spelar samtidigt!
+              </h4>
             </div>
           </div>
         </div>
