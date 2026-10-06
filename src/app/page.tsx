@@ -7,7 +7,7 @@ import { MaterialsList } from "@/components/materials-list";
 import TagList from "@/components/tag-list";
 
 import Logo from "@/assets/logo.jpg"
-import Mgc26Logo from "@/assets/mgc26.jpg"
+import Mgc26Logo from "@/assets/mgc26/mgc26.jpg"
 import { Sorting } from "@/components/sorting";
 import Link from "next/link";
 
