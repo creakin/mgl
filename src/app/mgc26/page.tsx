@@ -95,11 +95,11 @@ export default async function Page() {
           </h1>
           <div className="prose text-xl text-foreground md:text-2xl">
             <p>
-              Detta är ett gratis konvent för människor som vill utforska spel ur ett
-              socialistiskt DIY-perspektiv. Vi söker spelkonstruktörer,
-              spelledare, figurspelare, brädspelsnördar, rollspelare,
-              aktivister, tänkare, konstnärer, hackers, gruntar och nyfikna
-              kamrater.
+              Detta är ett <span className="font-bold">gratis</span> konvent för
+              människor som vill utforska spel ur ett socialistiskt
+              DIY-perspektiv. Vi söker spelkonstruktörer, spelledare,
+              figurspelare, brädspelsnördar, rollspelare, aktivister, tänkare,
+              konstnärer, hackers, gruntar och nyfikna kamrater.
             </p>
             <p>
               Det kan fortfarande finnas plats i programmet! Hör av dig om du
@@ -158,16 +158,15 @@ export default async function Page() {
             bokbord, och säkert en pamflett eller coolt klistermärke.
           </p>
           <p>
-            Utan hjälp från rutinerade kamrater från Lunds socialistiska
-            bokcafé skulle det här bli ett sämre event, så vi är glada att de
-            är med!
+            Utan hjälp från rutinerade kamrater från Lunds socialistiska bokcafé
+            skulle det här bli ett sämre event, så vi är glada att de är med!
           </p>
         </SplitSection>
 
         <hr className="col-span-5" />
 
         <div className="col-span-5 my-8">
-           <div className="grid md:grid-cols-2 gap-8 text-md mb-8 text-foreground w-full">
+          <div className="text-md mb-8 grid w-full gap-8 text-foreground md:grid-cols-2">
             <InfoItem title="INTRÄDE">
               Konventet är gratis, men eftersom du såklart vill köpa vårt zine
               uppmanar vi alla att passa på att donera extra efter förmåga när
@@ -189,7 +188,7 @@ export default async function Page() {
               inte kan bete sig. Diskriminering, kränkningar och slemmigt
               beteende hör inte hemma på våra event.
             </InfoItem>
-           </div>
+          </div>
         </div>
 
         <hr className="col-span-5" />
@@ -244,7 +243,10 @@ export default async function Page() {
             </p>
           </ScheduleItem>
 
-          <ScheduleItem time="Lördag 10 oktober, 10:00 - 12:00" title="RatSnake" />
+          <ScheduleItem
+            time="Lördag 10 oktober, 10:00 - 12:00"
+            title="RatSnake"
+          />
 
           <ScheduleItem
             time="Lördag 10 oktober, 10:00 - 14:00"
@@ -283,9 +285,9 @@ export default async function Page() {
               alla figurer som behövs.
             </p>
             <p>
-              Vill man ta med egna figurer så går det också bra (4+
-              28mm-figurer med &quot;grimdark investigators&quot;-känsla).
-              90-120 minuter/spel.
+              Vill man ta med egna figurer så går det också bra (4+ 28mm-figurer
+              med &quot;grimdark investigators&quot;-känsla). 90-120
+              minuter/spel.
             </p>
           </ScheduleItem>
 
@@ -331,9 +333,9 @@ export default async function Page() {
             <p>
               Oceania 2084 is both a creative experiment and a political
               intervention, showing how TTRPGs can grapple with difficult social
-              and human questions. Earlier academic work, including a
-              master’s thesis, has examined how the game adapts Orwell’s 1984
-              into a playable and faithful role-playing experience.
+              and human questions. Earlier academic work, including a master’s
+              thesis, has examined how the game adapts Orwell’s 1984 into a
+              playable and faithful role-playing experience.
             </p>
             <p>
               Here, the focus shifts from adaptation to argument: how the
