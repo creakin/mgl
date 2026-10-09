@@ -293,21 +293,22 @@ export default async function Page() {
 
           <ScheduleItem
             time="Lördag 10 oktober, 12:00"
-            title="Spelkonvent som motstånd och demokratisk infrastruktur"
+            title="Gaming Conventions as Resistance and Democratic Infrastructure"
             subtitle="Johanna Koljonen"
             image={Johanna}
             imageAlt="Johanna Koljonen"
           >
             <p className="font-bold">
-              Johanna Koljonen är doktorand i spelforskning på Tampere
-              University inom EU Horizon-projektet Larpocracy.
+              Johanna Koljonen is a game studies PhD researcher at Tampere
+              University in the EU Horizon project Larpocracy.
             </p>
             <p>
-              I denna halvtidsrapportering av gruppens opublicerade resultat
-              reder hon ut rollspelens totalt felaktiga historia, diskuterar
-              nordisk spelkultur som uttryck för nordiska demokratiformer och
-              samhällsstrukturer, och drar en lans för spelkonventens och
-              konventsforskningens politiska betydelse.
+              In this midterm presentation on the group’s unpublished findings,
+              she sets the record straight on the deeply misguided history of
+              role-playing games, discusses Nordic gaming culture as an
+              expression of Nordic forms of democracy and social structures, and
+              makes the case for the political significance of gaming
+              conventions and convention research.
             </p>
           </ScheduleItem>
 
