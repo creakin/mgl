@@ -25,6 +25,8 @@ import Quiz from "@/assets/mgc26/quiz.jpg";
 import Spanska from "@/assets/mgc26/spanska.jpg";
 import Loppis from "@/assets/mgc26/loppis.jpg";
 import Forgetful from "@/assets/mgc26/forgetful.jpg";
+import Ratsnake from "@/assets/mgc26/ratsnake.jpg";
+import Wyrms from "@/assets/mgc26/wyrms.jpg";
 import Spelverkstad from "@/assets/mgc26/spelverkstad.jpg";
 
 const metadata: Metadata = {
@@ -246,7 +248,20 @@ export default async function Page() {
           <ScheduleItem
             time="Lördag 10 oktober, 10:00 - 12:00"
             title="RatSnake"
-          />
+            imageAlt="RatSnake"
+            image={Ratsnake}
+          >
+            <p>
+              RatSnake (HjonKnekt): ett tärningsspel för skumma krogar,
+              rollspelsbord och lajv. Börja i rännstenen som Rat, klättra mot
+              Snake, där makten finns. Tärningsspel inspirerat av Fritz Leibers
+              Lankhmar.
+            </p>
+            <p>
+              Kom och satsa ett (lajv)mynt, kasta tärningarna, och se om ödet är
+              på din sida.
+            </p>
+          </ScheduleItem>
 
           <ScheduleItem
             time="Lördag 10 oktober, 10:00 - 14:00"
@@ -433,7 +448,16 @@ export default async function Page() {
           <ScheduleItem
             time="Lördag 10 oktober, 22:00 - 02:00"
             title="Wyrms & Warrens"
-          />
+            image={Wyrms}
+            imageAlt="Wyrms & Warrens"
+          >
+            <p>
+              Dungeon fantasy och spelaragens står i centrum när man spelar
+              Wyrms & Warrens. Skaparen skulle kanske motvilligt gå med på att
+              kalla det OSR, men rollspel är det i alla fall. Och det rullas
+              d20, fajtas med monster och stjäls skatter. Garanterat kul!
+            </p>
+          </ScheduleItem>
 
           <ScheduleItem
             time="Lördag 10 oktober, Hela dagen"
