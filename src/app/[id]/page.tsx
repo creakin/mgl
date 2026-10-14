@@ -32,14 +32,24 @@ export async function generateMetadata({
   const canonicalUrl = `https://www.mglabs.se/${material.id}`;
   const cleanDescription = material.summary ?? material.title;
 
+  const ogParams = new URLSearchParams({
+    title: material.title,
+    description: cleanDescription,
+  });
+  if (material.image) {
+    ogParams.set(
+      "image",
+      new URL(material.image, "https://www.mglabs.se").toString(),
+    );
+  }
+  const ogUrl = `https://www.mglabs.se/api/og?${ogParams.toString()}`;
+
   return {
     title: `${material.title} | mglabs.se`,
     description: cleanDescription,
-    alternates: {
-      canonical: canonicalUrl,
-    },
+    alternates: { canonical: canonicalUrl },
     openGraph: {
-      type: 'article',
+      type: "article",
       publishedTime: material.date,
       authors: material.author,
       tags: material.tags,
@@ -48,9 +58,7 @@ export async function generateMetadata({
       url: canonicalUrl,
       images: [
         {
-          url: material.image ?? `https://www.mglabs.se/api/og?title=${encodeURIComponent(
-            material.title,
-          )}&description=${encodeURIComponent(cleanDescription)}`,
+          url: ogUrl,
           width: 630,
           height: 630,
           alt: cleanDescription.slice(0, 100),
@@ -58,16 +66,13 @@ export async function generateMetadata({
       ],
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary",
       title: `${material.title} | mglabs.se`,
       description: cleanDescription,
-      images: [
-        material.image ?? `https://www.mglabs.se/api/og?title=${encodeURIComponent(material.title)}&description=${encodeURIComponent(cleanDescription)}`,
-      ],
+      images: [ogUrl],
     },
   };
 }
-
 export default async function Page({
   params,
 }: {
