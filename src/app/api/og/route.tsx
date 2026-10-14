@@ -2,6 +2,8 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
+const ALLOWED_IMAGE_HOSTS = ["www.mglabs.se", "mglabs.se"];
+
 const stripHtml = (html: string | null): string | null => {
   if (!html) return null;
   return html
@@ -11,14 +13,48 @@ const stripHtml = (html: string | null): string | null => {
     .trim();
 };
 
+function getSafeImageUrl(raw: string | null): string | null {
+  if (!raw) return null;
+  try {
+    const url = new URL(raw);
+    if (url.protocol !== "https:") return null;
+    if (!ALLOWED_IMAGE_HOSTS.includes(url.hostname)) return null;
+    return url.toString();
+  } catch {
+    return null;
+  }
+}
+
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
-    const hasTitle = searchParams.has("title");
-    const title = hasTitle
-      ? searchParams.get("title")!.length > 50
-        ? searchParams.get("title")!.slice(0, 50) + "…"
-        : searchParams.get("title")
+
+    // Material image: fill the square (cover)
+    const image = getSafeImageUrl(searchParams.get("image"));
+    if (image) {
+      return new ImageResponse(
+        (
+          <div style={{ display: "flex", width: "100%", height: "100%" }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={image}
+              width={630}
+              height={630}
+              style={{ objectFit: "cover" }}
+              alt=""
+            />
+          </div>
+        ),
+        { width: 630, height: 630 },
+      );
+    }
+
+    // Fallback: text card
+    const rawTitle = searchParams.get("title");
+    const title = rawTitle
+      ? rawTitle.length > 50
+        ? rawTitle.slice(0, 50) + "…"
+        : rawTitle
       : "Materialist Game Labs";
 
     const descriptionRaw = stripHtml(searchParams.get("description"));
@@ -58,10 +94,7 @@ export async function GET(request: Request) {
           </div>
         </div>
       ),
-      {
-        width: 630,
-        height: 630,
-      },
+      { width: 630, height: 630 },
     );
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (e) {
