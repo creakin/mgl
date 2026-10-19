@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { MaterialsList } from "@/components/materials-list";
 import TagList from "@/components/tag-list";
-import Markdown from 'react-markdown'
+import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Button } from "@/components/ui/button";
 import { SquareArrowOutUpRight, HardDriveDownload } from "lucide-react";
@@ -81,7 +81,9 @@ export default async function Page({
   const material = await getMaterialData((await params).id);
   const allMaterials = await getAllMaterials();
   const relatedCandidates = allMaterials.filter((s) => s.id !== material.id);
-  const sameAuthor = relatedCandidates.filter((s) => s.author === material.author);
+  const sameAuthor = relatedCandidates.filter(
+    (s) => s.author === material.author,
+  );
   const related = (sameAuthor.length ? sameAuthor : relatedCandidates)
     .sort((a, b) => a.title.localeCompare(b.title))
     .slice(0, 4);
@@ -128,9 +130,15 @@ export default async function Page({
       <IndexLink />
 
       <article className="col-span-3 [&_p:not(:last-child)]:mb-6 [&_p]:text-pretty">
-        {material.image &&
-          <Image src={material.image} width={300} height={300} className="object-contain mb-4" alt={`Bild till ${material.title}`} />
-        }
+        {material.image && (
+          <Image
+            src={material.image}
+            width={300}
+            height={300}
+            className="mb-4 object-contain"
+            alt={`Bild till ${material.title}`}
+          />
+        )}
         <h1 className="mb-1 font-medium">{material.title}</h1>
         <p className="!mb-1 text-sm text-muted-foreground">{material.author}</p>
         <p className="!mb-12 text-sm text-muted-foreground">{material.date}</p>
@@ -144,27 +152,23 @@ export default async function Page({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
         />
         <div
-          className="text-muted-foreground mb-8 prose dark:prose-invert"
-          dangerouslySetInnerHTML={{
-            __html:
-              <Markdown remarkPlugins={[remarkGfm]}>{material.content}</Markdown>
-          }}
-        >
-        </div>
+          className="prose mb-8 text-muted-foreground dark:prose-invert"
+          dangerouslySetInnerHTML={{ __html: material.content }}
+        />
 
         <Link href={material.link} target="_blank">
-          <Button size="lg" className="mb-8" variant="outline" >
-            { material.link.includes("https://mglabs.se") ? (
+          <Button size="lg" className="mb-8" variant="outline">
+            {material.link.includes("https://mglabs.se") ? (
               <>
                 Ladda ner material
                 <HardDriveDownload />
               </>
-             ) : (
+            ) : (
               <>
                 Gå till material
                 <SquareArrowOutUpRight />
               </>
-             ) }
+            )}
           </Button>
         </Link>
 
